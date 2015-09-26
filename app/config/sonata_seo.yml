@@ -3,12 +3,12 @@ sonata_seo:
     encoding:         UTF-8
     page:
         default: sonata.seo.page.default
-        title:            Marpec
+        title:            Clover
         default:          sonata.seo.page.default
         metas:
             name:
                 keywords:             admin,template,lightweight,dashboard,responsive,webapp,css3,html5,jquery,bootstrap
-                description:          Marpec Admin Template Bootstrap
+                description:          Clover Admin Template Bootstrap
                 author:               Emmanuel COUVREUR
                 #robots:               index, follow
 
