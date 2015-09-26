@@ -47,9 +47,9 @@
 
                     {% include 'AppCloverBundle:Default:heading_page.html.twig' with {} %}
 
-                    {% block content %}
-
-                    {% endblock %}
+                    <div class='wrapper'>
+                        {% block content %}{% endblock %}
+                    </div>
 
                     {% include 'AppCloverBundle:Default:footer.html.twig' with {} %}
                 </div>
