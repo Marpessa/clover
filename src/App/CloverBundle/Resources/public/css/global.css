@@ -1,0 +1,61 @@
+body {
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    line-height: 1.42857;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 10px;
+}
+h3,
+h4,
+h5 {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+.sidebar-wrapper {
+    background: rgba(0,0,0,.1);
+    color: #FFF;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    z-index: 1080;
+}
+
+.container-wrapper {
+    position: relative;
+    background-color: #EAEAEA;
+    color: #676a6c;
+    margin-left: 200px;
+}

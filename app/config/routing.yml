@@ -1,0 +1,3 @@
+app_clover:
+    resource: "@AppCloverBundle/Resources/config/routing.yml"
+    prefix:   /

@@ -1,0 +1,7 @@
+app_clover_homepage:
+    path:     /
+    defaults: { _controller: AppCloverBundle:Default:index }
+
+app_clover_tables:
+    path:     /tables.html
+    defaults: { _controller: AppCloverBundle:Default:index }
