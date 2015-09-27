@@ -11,6 +11,10 @@ app_clover_buttons:
     path:     /buttons.html
     defaults: { _controller: AppCloverBundle:UI:buttons }
 
+app_clover_panels:
+    path:     /panels.html
+    defaults: { _controller: AppCloverBundle:UI:panels }
+
 app_clover_typography:
     path:     /typography.html
     defaults: { _controller: AppCloverBundle:UI:typography }

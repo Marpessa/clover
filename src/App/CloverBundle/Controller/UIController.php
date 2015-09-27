@@ -19,6 +19,19 @@ class UIController extends Controller
         return $this->render('AppCloverBundle:UI:buttons.html.twig', array());
     }
 
+    public function panelsAction()
+    {
+        $seoPage = $this->container->get('sonata.seo.page');
+        $seoPage
+            ->setTitle('Panels | Clover')
+            ->addMeta('name', 'description', '');
+
+        $breadcrumbs = $this->getBaseBreadcrumb();
+        $breadcrumbs->addItem("Panels", $this->get("router")->generate("app_clover_panels"));
+
+        return $this->render('AppCloverBundle:UI:panels.html.twig', array());
+    }
+
     public function typographyAction()
     {
         $seoPage = $this->container->get('sonata.seo.page');

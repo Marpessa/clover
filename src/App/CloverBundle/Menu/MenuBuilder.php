@@ -153,6 +153,11 @@ class MenuBuilder
             'label' => 'Buttons'
         ));
 
+        $menu['ui']->addChild('panels', array(
+            'route' => 'app_clover_panels',
+            'label' => 'Panels'
+        ));
+
         $menu['ui']->addChild('typography', array(
             'route' => 'app_clover_typography',
             'label' => 'Typography'
