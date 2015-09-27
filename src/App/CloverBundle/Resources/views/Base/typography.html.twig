@@ -78,18 +78,18 @@
                 </div>
 
                 <div class='panel-body'>
-                    Define text styling using next classes:
-                    <code>&lt;small&gt;</code>,
-                    <code>&lt;strong&gt;</code>,
-                    <code>&lt;em&gt;</code>,
-                    <code>&lt;code&gt;</code>
-                    <code>&lt;abbr&gt;</code>
-                    <code>&lt;strike&gt;</code>
+                    Define text styling using next tags:
+                    <code>&lt;small/&gt;</code>,
+                    <code>&lt;strong/&gt;</code>,
+                    <code>&lt;em/&gt;</code>,
+                    <code>&lt;code/&gt;</code>
+                    <code>&lt;abbr/&gt;</code>
+                    <code>&lt;del/&gt;</code>
                     <hr />
 
-                    <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Phasellus laoreet <em>sed erat non venenatis</em>. Sed non maximus turpis. Sed commodo lacus non lorem aliquam aliquam.</p>
+                    <p>Lorem ipsum <small>dolor sit amet</small>, nibh erat <strong>consectetur adipiscing</strong> elit. Phasellus laoreet <em>sed erat non venenatis</em>. Sed non maximus turpis. Sed commodo lacus non lorem aliquam aliquam.</p>
                     <p>Suspendisse luctus elit non venenatis tristique. Donec tempus, <code>&lt;code&gt;</code> lectus vitae laoreet pretium, velit tellus tristique metus, vitae ultrices nibh erat ac odio.</p>
-                    <p>Curabitur eu facilisis tellus. <abbr title='sample' data-original-title>Nulla imperdiet</abbr> ullamcorper maximus. Nullam in <strike>tempus</strike> lectus. Sed a convallis orci, non molestie enim.</p>
+                    <p>Curabitur eu facilisis tellus. <abbr title='sample' data-original-title>Nulla imperdiet</abbr> ullamcorper maximus. Nullam in <del>tempus</del> lectus. Sed a convallis orci, non molestie enim.</p>
                 </div>
             </div>
         </div>
@@ -103,14 +103,282 @@
                 </div>
 
                 <div class='panel-body'>
-                    Define text alignment using next classes:
-                    <code>&lt;text-left&gt;</code>,
-                    <code>&lt;text-center&gt;</code>,
-                    <code>&lt;text-right&gt;</code>
+                    Define text alignment using next tags:
+                    <code>&lt;text-left/&gt;</code>,
+                    <code>&lt;text-center/&gt;</code>,
+                    <code>&lt;text-right/&gt;</code>,
+                    <code>&lt;text-justify/&gt;</code>,
+                    <code>&lt;text-nowrap/&gt;</code>
                     <hr />
+
+                    <p class="text-left">
+                        <strong>Left</strong> text alignment&nbsp;<code>.text-left</code>
+                    </p>
+
+                    <p class="text-center">
+                        <strong>Center</strong> text alignment&nbsp;<code>.text-center</code>
+                    </p>
+
+                    <p class="text-right">
+                        <strong>Right</strong> text alignment&nbsp;<code>.text-right</code>
+                    </p>
+
+                    <p class="text-justify">
+                        <strong>Justify</strong> text alignment&nbsp;<code>.text-justify</code>
+                    </p>
+
+                    <p class="text-nowrap">
+                        <strong>No wrap</strong> text alignment&nbsp;<code>.text-nowrap</code>
+                    </p>
                 </div>
             </div>
         </div>
 
+        <div class='col-md-3'>
+            <div class='panel'>
+                <div class='panel-heading'>
+                    <h2>Address Format</h2>
+                </div>
+
+                <div class='panel-body'>
+                    Define address format using next tag:
+                    <code>&lt;address/&gt;</code>
+                    <hr />
+
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        Phone: (123) 456-7890
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div class='col-md-6'>
+            <div class='panel'>
+                <div class='panel-heading'>
+                    <h2>Block quotes</h2>
+                </div>
+
+                <div class='panel-body'>
+                    Define block quotes using next tag:
+                    <code>&lt;blockquote/&gt;</code>
+                    <hr />
+
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <small><strong>Author name</strong> in <cite title="" data-original-title="">Book name</cite></small>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class='row'>
+        <div class='col-md-4'>
+            <div class='panel'>
+                <div class='panel-heading'>
+                    <h2>Unstyled list</h2>
+                </div>
+
+                <div class='panel-body'>
+                    Define ordered list using next class:
+                    <code>.unstyled</code>
+                    <hr />
+
+                    <ul class="unstyled">
+                        <li>Sed finibus turpis</li>
+                        <li>Nunc eget odio eleifend</li>
+                        <li>Etiam at quam at metus</li>
+                        <li>In elementum massa vulputat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class='col-md-4'>
+            <div class='panel'>
+                <div class='panel-heading'>
+                    <h2>Regular list</h2>
+                </div>
+
+                <div class='panel-body'>
+                    Define regular list using next tag:
+                    <code>&lt;ul/&gt;</code>
+                    <hr />
+
+                    <ul>
+                        <li>Sed finibus turpis</li>
+                        <li>Nunc eget odio eleifend</li>
+                        <li>Etiam at quam at metus</li>
+                        <li>In elementum massa vulputat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class='col-md-4'>
+            <div class='panel'>
+                <div class='panel-heading'>
+                    <h2>Ordered list</h2>
+                </div>
+
+                <div class='panel-body'>
+                    Define ordered list using next tag:
+                    <code>&lt;ol/&gt;</code>
+                    <hr />
+
+                    <ol>
+                        <li>Sed finibus turpis</li>
+                        <li>Nunc eget odio eleifend</li>
+                        <li>Etiam at quam at metus</li>
+                        <li>In elementum massa vulputat</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='col-md-8'>
+            <div class='panel'>
+                <div class='panel-heading'>
+                    <h2>Emphasis Classes</h2>
+                </div>
+
+                <div class='panel-body'>
+                    Define emphasis using next classes:
+                    <code>.text-muted</code>,
+                    <code>.text-primary</code>,
+                    <code>.text-success</code>,
+                    <code>.text-info</code>,
+                    <code>.text-warning</code>,
+                    <code>.text-danger</code>,
+                    <code>.bg-primary</code>,
+                    <code>.bg-success</code>,
+                    <code>.bg-info</code>,
+                    <code>.bg-warning</code>,
+                    <code>.bg-danger</code>,
+                    <hr />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-muted">
+                                <strong>Muted text</strong> 
+                                <code class="pull-right">.text-muted</code>
+                            </p>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-primary">
+                                <strong>Primary text</strong> 
+                                <code class="pull-right">.text-primary</code>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="bg-primary">
+                                <strong>Primary background color</strong> 
+                                <code class="pull-right">.bg-primary</code>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-success">
+                                <strong>Success text</strong> 
+                                <code class="pull-right">.text-success</code>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="bg-success">
+                                <strong>Success background color</strong> 
+                                <code class="pull-right">.bg-success</code>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-info">
+                                <strong>Info text</strong> 
+                                <code class="pull-right">.text-info</code>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="bg-info">
+                                <strong>Info background color</strong> 
+                                <code class="pull-right">.bg-info</code>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-warning">
+                                <strong>Warning text</strong> 
+                                <code class="pull-right">.text-warning</code>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="bg-warning">
+                                <strong>Warning background color</strong> 
+                                <code class="pull-right">.bg-warning</code>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-danger">
+                                <strong>Danger text</strong> 
+                                <code class="pull-right">.text-danger</code>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="bg-danger">
+                                <strong>Danger background color</strong> 
+                                <code class="pull-right">.bg-danger</code>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='col-md-4'>
+            <div class='panel'>
+                <div class='panel-heading'>
+                    <h2>Wells</h2>
+                </div>
+
+                <div class='panel-body'>
+                    Define wells using next classes:
+                    <code>.well</code>,
+                    <code>.well .well-lg</code>,
+                    <code>.well .well-sm</code>
+                    <hr />
+
+                    <code class="pull-right">.well</code>
+                    <div class='clearfix'></div>
+                    <div class="well">
+                        In elementum massa vulputate ex suscipit finibus. Aliquam id vulputate est. Phasellus placerat eleifend faucibus. Donec leo eros, iaculis nec molestie non, porttitor accumsan risus.
+                    </div>
+
+                    <code class="pull-right">.well .well-lg</code>
+                    <div class='clearfix'></div>
+                    <div class="well well-lg">
+                        Nunc id neque eu diam suscipit hendrerit eget ut lectus. Sed eget interdum dolor. In pulvinar tincidunt sem, vel fringilla ex. Donec luctus diam interdum sapien porta ornare.
+                    </div>
+
+                    <code class="pull-right">.well .well-sm</code>
+                    <div class='clearfix'></div>
+                    <div class="well well-sm">
+                        Nulla dapibus vel tellus et fermentum. Nunc nisl velit, facilisis eu tellus quis, vulputate malesuada diam. Fusce aliquam molestie libero, eu lobortis purus vulputate non.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}

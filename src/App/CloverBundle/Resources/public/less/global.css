@@ -4,6 +4,7 @@ body {
     font-size: 13px;
     line-height: 1.42857;
     margin: 0;
+    background-color: #f3f3f4;
 }
 
 h1,
@@ -37,6 +38,12 @@ h4,
 h5 {
   margin-top: 5px;
   font-weight: 600;
+}
+
+ul.unstyled,
+ol.unstyled {
+    list-style: none outside none;
+    margin-left: 0;
 }
 
 /* pace */
@@ -90,7 +97,7 @@ h5 {
 }
 
 .panel {
-    background-color: #f3f3f4;
+    background-color: #fff;
     border-radius: 0;
     box-shadow: none;
 }
