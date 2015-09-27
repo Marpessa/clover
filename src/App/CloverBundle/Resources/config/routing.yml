@@ -9,3 +9,7 @@ app_clover_tables:
 app_clover_typography:
     path:     /typography.html
     defaults: { _controller: AppCloverBundle:UI:typography }
+
+app_clover_icons:
+    path:     /icons.html
+    defaults: { _controller: AppCloverBundle:UI:icons }

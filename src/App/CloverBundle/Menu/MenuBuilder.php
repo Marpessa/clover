@@ -32,19 +32,7 @@ class MenuBuilder
             )
         ));
 
-        $menu->addChild('ui', array(
-            'route' => 'app_clover_tables',
-            'label' => '<i class="fa fa-flask"></i> UI Elements',
-            'extras' => array(
-                'safe_label' => true
-            )
-        ));
-        $menu['ui']->setChildrenAttribute('class', 'nav');
-
-        $menu['ui']->addChild('typography', array(
-            'route' => 'app_clover_typography',
-            'label' => 'Typography'
-        ));
+        $this->getUIMenu($menu);
 
         $menu->addChild('tables', array(
             'route' => 'app_clover_tables',
@@ -56,7 +44,7 @@ class MenuBuilder
 
         $menu->addChild('emailing', array(
             'route' => 'app_clover_tables',
-            'label' => '<i class="fa fa-enveloppe-o"></i> Emailing',
+            'label' => '<i class="fa fa-envelope-o"></i> Emailing',
             'extras' => array(
                 'safe_label' => true
             )
@@ -147,5 +135,27 @@ class MenuBuilder
         ));
 
         return $menu;
+    }
+
+    private function getUIMenu(&$menu)
+    {
+        $menu->addChild('ui', array(
+            'route' => 'app_clover_tables',
+            'label' => '<i class="fa fa-flask"></i> UI Elements',
+            'extras' => array(
+                'safe_label' => true
+            )
+        ));
+        $menu['ui']->setChildrenAttribute('class', 'nav');
+
+        $menu['ui']->addChild('typography', array(
+            'route' => 'app_clover_typography',
+            'label' => 'Typography'
+        ));
+
+        $menu['ui']->addChild('icons', array(
+            'route' => 'app_clover_icons',
+            'label' => 'Icons'
+        ));
     }
 }

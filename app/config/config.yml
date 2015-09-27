@@ -37,6 +37,10 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    globals:
+        bootstrap_version: "%bootstrap_version%"
+        font_awesome_version: "%font_awesome_version%"
+        metis_menu_version: "%metis_menu_version%"
 
 # Assetic Configuration
 assetic:

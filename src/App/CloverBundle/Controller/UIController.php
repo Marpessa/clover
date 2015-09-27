@@ -16,7 +16,20 @@ class UIController extends Controller
         $breadcrumbs = $this->getBaseBreadcrumb();
         $breadcrumbs->addItem("Typography", $this->get("router")->generate("app_clover_typography"));
 
-        return $this->render('AppCloverBundle:Base:typography.html.twig', array());
+        return $this->render('AppCloverBundle:UI:typography.html.twig', array());
+    }
+
+    public function iconsAction()
+    {
+        $seoPage = $this->container->get('sonata.seo.page');
+        $seoPage
+            ->setTitle('Icons | Clover')
+            ->addMeta('name', 'description', '');
+
+        $breadcrumbs = $this->getBaseBreadcrumb();
+        $breadcrumbs->addItem("Icons", $this->get("router")->generate("app_clover_icons"));
+
+        return $this->render('AppCloverBundle:UI:icons.html.twig', array());
     }
 
     private function getBaseBreadcrumb()
