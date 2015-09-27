@@ -6,6 +6,19 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class UIController extends Controller
 {
+    public function buttonsAction()
+    {
+        $seoPage = $this->container->get('sonata.seo.page');
+        $seoPage
+            ->setTitle('Buttons | Clover')
+            ->addMeta('name', 'description', '');
+
+        $breadcrumbs = $this->getBaseBreadcrumb();
+        $breadcrumbs->addItem("Icons", $this->get("router")->generate("app_clover_buttons"));
+
+        return $this->render('AppCloverBundle:UI:buttons.html.twig', array());
+    }
+
     public function typographyAction()
     {
         $seoPage = $this->container->get('sonata.seo.page');

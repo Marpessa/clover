@@ -148,6 +148,11 @@ class MenuBuilder
         ));
         $menu['ui']->setChildrenAttribute('class', 'nav');
 
+        $menu['ui']->addChild('buttons', array(
+            'route' => 'app_clover_buttons',
+            'label' => 'Buttons'
+        ));
+
         $menu['ui']->addChild('typography', array(
             'route' => 'app_clover_typography',
             'label' => 'Typography'

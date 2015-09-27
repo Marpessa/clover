@@ -6,6 +6,11 @@ app_clover_tables:
     path:     /tables.html
     defaults: { _controller: AppCloverBundle:Default:tables }
 
+# UI
+app_clover_buttons:
+    path:     /buttons.html
+    defaults: { _controller: AppCloverBundle:UI:buttons }
+
 app_clover_typography:
     path:     /typography.html
     defaults: { _controller: AppCloverBundle:UI:typography }
