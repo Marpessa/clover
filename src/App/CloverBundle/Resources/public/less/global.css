@@ -85,6 +85,16 @@ h5 {
     min-height: 600px;
 }
 
+.wrapper {
+    padding: 0 20px;
+}
+
+.panel {
+    background-color: #f3f3f4;
+    border-radius: 0;
+    box-shadow: none;
+}
+
 /* Breadcrumb */
 .breadcrumb {
     margin: 20px 0;
