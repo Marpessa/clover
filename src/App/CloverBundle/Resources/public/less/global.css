@@ -1,6 +1,6 @@
 body {
     font-weight: 300;
-    font-family: "Raleway", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 13px;
     line-height: 1.42857;
     margin: 0;
@@ -80,9 +80,15 @@ h5 {
 
 .container-wrapper {
     position: relative;
-    background-color: #EAEAEA;
-    color: #676a6c;
     margin-left: 200px;
 
     min-height: 600px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin: 20px 0;
+    font-weight: 400;
+    
+    background: none;
 }

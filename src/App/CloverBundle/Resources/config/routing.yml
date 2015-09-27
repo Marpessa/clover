@@ -4,4 +4,8 @@ app_clover_homepage:
 
 app_clover_tables:
     path:     /tables.html
-    defaults: { _controller: AppCloverBundle:Default:index }
+    defaults: { _controller: AppCloverBundle:Default:tables }
+
+app_clover_typography:
+    path:     /typography.html
+    defaults: { _controller: AppCloverBundle:UI:typography }

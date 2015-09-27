@@ -39,6 +39,12 @@ class MenuBuilder
                 'safe_label' => true
             )
         ));
+        $menu['ui']->setChildrenAttribute('class', 'nav');
+
+        $menu['ui']->addChild('typography', array(
+            'route' => 'app_clover_typography',
+            'label' => 'Typography'
+        ));
 
         $menu->addChild('tables', array(
             'route' => 'app_clover_tables',
@@ -48,9 +54,9 @@ class MenuBuilder
             )
         ));
 
-        $menu->addChild('mailbox', array(
+        $menu->addChild('emailing', array(
             'route' => 'app_clover_tables',
-            'label' => '<i class="fa fa-flask"></i> Mailbox',
+            'label' => '<i class="fa fa-enveloppe-o"></i> Emailing',
             'extras' => array(
                 'safe_label' => true
             )
@@ -83,14 +89,6 @@ class MenuBuilder
         $menu->addChild('pages', array(
             'route' => 'app_clover_tables',
             'label' => '<i class="fa fa-file-o"></i> Pages',
-            'extras' => array(
-                'safe_label' => true
-            )
-        ));
-
-        $menu->addChild('typography', array(
-            'route' => 'app_clover_tables',
-            'label' => '<i class="fa fa-text-width"></i> Typography',
             'extras' => array(
                 'safe_label' => true
             )
